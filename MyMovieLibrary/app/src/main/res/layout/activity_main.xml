@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.michaelzil.movieslibraryappproject_michaelzilberman.MainActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_movie_library_app"
+        android:padding="15dp">
+        <ListView
+            android:id="@+id/moviesList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="@color/red"
+            android:dividerHeight="2dp"
+            android:background="@drawable/style_lists_and_edit_texts">
+        </ListView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

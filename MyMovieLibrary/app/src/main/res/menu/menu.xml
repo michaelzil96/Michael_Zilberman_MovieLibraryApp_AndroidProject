@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuItemAdd"
+        android:icon="@drawable/plus_icon"
+        android:title="Add"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/addInternet"
+                android:title="@string/addByInternet" />
+
+            <item
+                android:id="@+id/addManually"
+                android:title="@string/addManually" />
+
+
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menuItemExitOrDelete"
+        android:icon="@drawable/x_icon"
+        android:title="Exit"
+        app:showAsAction="always" >
+        <menu>
+            <item
+                android:id="@+id/deleteAllMovies"
+                android:title="@string/delete_all_movies" />
+
+            <item
+                android:id="@+id/exitApp"
+                android:title="@string/exit_the_app" />
+        </menu>
+    </item>
+</menu>

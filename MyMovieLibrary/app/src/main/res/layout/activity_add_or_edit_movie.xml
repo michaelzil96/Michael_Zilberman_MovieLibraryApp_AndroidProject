@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.michaelzil.movieslibraryappproject_michaelzilberman.AddOrEditMovieActivity">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_movie_library_app"
+            android:gravity="center"
+            android:padding="16dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/movieNameTextView"
+                android:layout_width="140dp"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:background="@drawable/style_text_view"
+                android:text="@string/movieNameTextView" />
+
+            <EditText
+                android:id="@+id/movieNameEditText"
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:background="@drawable/style_lists_and_edit_texts"
+                android:padding="4dp"
+                android:hint="@string/required_field_hint"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/style_text_view"
+                android:padding="4dp"
+                android:text="@string/DescriptionTextView"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/descriptionEditText"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:background="@drawable/style_lists_and_edit_texts"
+                android:gravity="start"
+                android:padding="7dp"
+                />
+
+            <TextView
+                android:id="@+id/URLTextView"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/style_text_view"
+                android:padding="4dp"
+                android:text="@string/ImageURL"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+                    android:id="@+id/URLEditText"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/style_lists_and_edit_texts"
+                    android:padding="4dp" />
+
+                <Button
+                    android:id="@+id/showButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/style_buttons"
+                    android:text="@string/showButton"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/posterNetworkImageView"
+                android:layout_width="220dp"
+                android:layout_height="190dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/empty_movie_poster" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupWatchedOrNot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/style_lists_and_edit_texts"
+                android:padding="10dp">
+                <RadioButton
+                    android:id="@+id/radioButtonWatched"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/watched_radiobutton"/>
+                <RadioButton
+                    android:id="@+id/radioButtonDidntWatch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/didnt_watch_radiobutton"
+                    android:layout_marginLeft="25dp"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp">
+                <Button
+                    android:id="@+id/okButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/style_buttons"
+                    android:text="@string/okButton" />
+                <Button
+                    android:id="@+id/cancelButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/style_buttons"
+                    android:text="@string/cancelButton"
+                    android:layout_marginLeft="30dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

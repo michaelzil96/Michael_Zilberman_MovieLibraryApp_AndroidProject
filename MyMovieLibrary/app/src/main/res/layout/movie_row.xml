@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="12dp">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/movieThumbnailImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/dateMovieAddedTextView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/empty_movie_poster" />
+
+        <TextView
+            android:id="@+id/movieNameTextView"
+            android:layout_width="wrap_content"
+            android:maxWidth="250dp"
+            android:layout_height="wrap_content"
+            android:maxHeight="140dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/movieThumbnailImageView"
+            android:text="Movie Name Here"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/watchedOrNotTextView"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBaseline="@+id/dateMovieAddedTextView"
+            android:layout_alignBottom="@+id/dateMovieAddedTextView"
+            android:layout_alignParentStart="true"
+            android:text="Didn't watch"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/dateMovieAddedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:text="date added 00/00/00" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

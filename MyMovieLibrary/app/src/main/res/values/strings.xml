@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">My Movie Library</string>
+    <string name="movieNameTextView">Movie Name</string>
+    <string name="DescriptionTextView">Description</string>
+    <string name="ImageURL">Image-URL</string>
+    <string name="showButton">Show</string>
+    <string name="okButton">OK</string>
+    <string name="cancelButton">Cancel</string>
+    <string name="addByInternet">Add by internet</string>
+    <string name="addManually">Add manually</string>
+    <string name="searchTextView">Search A Movie</string>
+    <string name="goButton">Go</string>
+    <string name="delete_all_movies">Delete all movies</string>
+    <string name="exit_the_app">Exit the app</string>
+    <string name="empty_search">Enter a movie title please</string>
+    <string name="empty_movieName">Enter the movie name first please</string>
+    <string name="editButton">Edit</string>
+    <string name="deleteButton">Delete</string>
+    <string name="dialogEditOrDeleteTitle">Please make a choice</string>
+    <string name="dialog_text">What do you want to do?</string>
+    <string name="didnt_watch_radiobutton">Didn\'t Watch</string>
+    <string name="watched_radiobutton">Watched</string>
+    <string name="required_field_hint">Required field</string>
+
+</resources>
